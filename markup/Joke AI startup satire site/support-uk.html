@@ -48,7 +48,7 @@
   </div>
 </header>
 <!-- Replace the placeholder wallet addresses before publishing. -->
-<main class="shell pt-20" x-data="wallets">
+<main class="shell pt-20">
   <div class="grid gap-14" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
     <div data-reveal>
       <span class="eyebrow">Раунд «Еспресо»</span>
@@ -66,13 +66,7 @@
       <span class="card-kicker">Гаманці</span>
       <h3 style="font-size:20px">Надіслати каву</h3>
       <p class="text-muted" style="font-size:13px;margin:0">Будь-яка сума. 6.7 будь-якої валюти — традиційно, але не обовʼязково.</p>
-      <div class="flex flex-col gap-3 mt-3">
-        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:12px 14px"><div class="flex items-center gap-2"><span style="font-size:14px;font-family:var(--font-heading)">Bitcoin</span><span class="tag tag-outline" style="font-size:10px">BTC</span><button type="button" class="btn btn-ghost ml-auto" style="font-size:12px" x-on:click="copy('bc1qREPLACE0000000000000000000000000000000')" x-text="copied === 'bc1qREPLACE0000000000000000000000000000000' ? 'Скопійовано' : 'Копіювати'">Копіювати</button></div><div class="mono text-muted" style="font-size:11px;word-break:break-all;margin-top:6px">bc1qREPLACE0000000000000000000000000000000</div></div>
-        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:12px 14px"><div class="flex items-center gap-2"><span style="font-size:14px;font-family:var(--font-heading)">Ethereum</span><span class="tag tag-outline" style="font-size:10px">ETH / ERC-20</span><button type="button" class="btn btn-ghost ml-auto" style="font-size:12px" x-on:click="copy('0xREPLACE0000000000000000000000000000000000')" x-text="copied === '0xREPLACE0000000000000000000000000000000000' ? 'Скопійовано' : 'Копіювати'">Копіювати</button></div><div class="mono text-muted" style="font-size:11px;word-break:break-all;margin-top:6px">0xREPLACE0000000000000000000000000000000000</div></div>
-        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:12px 14px"><div class="flex items-center gap-2"><span style="font-size:14px;font-family:var(--font-heading)">Tron</span><span class="tag tag-outline" style="font-size:10px">USDT TRC-20</span><button type="button" class="btn btn-ghost ml-auto" style="font-size:12px" x-on:click="copy('TREPLACE00000000000000000000000000')" x-text="copied === 'TREPLACE00000000000000000000000000' ? 'Скопійовано' : 'Копіювати'">Копіювати</button></div><div class="mono text-muted" style="font-size:11px;word-break:break-all;margin-top:6px">TREPLACE00000000000000000000000000</div></div>
-        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:12px 14px"><div class="flex items-center gap-2"><span style="font-size:14px;font-family:var(--font-heading)">Solana</span><span class="tag tag-outline" style="font-size:10px">SOL</span><button type="button" class="btn btn-ghost ml-auto" style="font-size:12px" x-on:click="copy('REPLACE000000000000000000000000000000000000')" x-text="copied === 'REPLACE000000000000000000000000000000000000' ? 'Скопійовано' : 'Копіювати'">Копіювати</button></div><div class="mono text-muted" style="font-size:11px;word-break:break-all;margin-top:6px">REPLACE000000000000000000000000000000000000</div></div>
-        <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:12px 14px"><div class="flex items-center gap-2"><span style="font-size:14px;font-family:var(--font-heading)">Toncoin</span><span class="tag tag-outline" style="font-size:10px">TON</span><button type="button" class="btn btn-ghost ml-auto" style="font-size:12px" x-on:click="copy('UQREPLACE00000000000000000000000000000000000000000')" x-text="copied === 'UQREPLACE00000000000000000000000000000000000000000' ? 'Скопійовано' : 'Копіювати'">Копіювати</button></div><div class="mono text-muted" style="font-size:11px;word-break:break-all;margin-top:6px">UQREPLACE00000000000000000000000000000000000000000</div></div>
-      </div>
+      <div class="wallet-scroll mt-3">[wallets]</div>
       <p class="text-muted" style="font-size:11px;line-height:1.5;margin-top:10px">Транзакції незворотні, неповоротні й непідтверджувані. Немає чека, немає NFT, немає токена, немає алокації, немає наступного раунду. Є, щонайбільше, кава.</p>
     </div>
   </div>
@@ -93,7 +87,7 @@
       <p class="mono" style="opacity:.55;font-size:12px;margin-top:28px">Підписано ніким. Не підлягає примусовому виконанню проти нікого. Версія 6.7.</p>
     </div>
   </section>
-  <section class="py-16" data-reveal>
+  <section class="pt-16 pb-2" data-reveal>
     <div style="max-width:62ch"><h3>Інші способи підтримати — усі дешевші</h3>
     <ul style="padding-left:18px;line-height:1.9;color:color-mix(in srgb, var(--color-text) 82%, transparent)"><li>Надішліть <a href="blog-uk.html">Польову нотатку</a> колезі, який без іронії каже «агентний».</li><li>Перешліть <a href="pricing-uk.html">калькулятор пропозиції</a> в закупівлі без жодного контексту.</li><li>Назвіть комусь на конференції свій бал 6/7 і відмовтесь пояснювати метрику.</li><li>Не робіть нічого. Це варіант за замовчуванням, і він нормальний.</li></ul></div>
   </section>

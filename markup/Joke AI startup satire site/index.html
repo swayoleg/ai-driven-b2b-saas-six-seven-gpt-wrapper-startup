@@ -60,6 +60,7 @@
         <a href="pricing.html" class="btn btn-secondary">See pricing</a>
       </div>
       <p class="mt-6 text-muted" style="font-size:12px" data-reveal data-reveal-delay="260">Average time to value: 6–7 quarters. Median time to understanding: not measured.</p>
+      <p class="mt-3" data-reveal data-reveal-delay="300" style="font-size:15px;line-height:1.5;max-width:58ch"><strong style="font-weight:600;color:var(--color-accent)">2026 is the year of server-less-less architecture.</strong> <span class="text-muted">We removed the servers in 2024. This year we are removing the less.</span></p>
       <div class="grid gap-px mt-16" data-reveal style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));background:var(--color-divider);border-radius:var(--radius-lg);overflow:hidden">
         <div style="background:var(--color-bg);padding:22px 20px"><div class="text-muted" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase">Agents deployed</div><div class="mono mt-2" style="font-size:30px;font-family:var(--font-heading)"><span data-counter data-base="68412" data-swing="40">68,412</span></div><div class="text-muted mt-1" style="font-size:12px">across 6 regions</div></div>
         <div style="background:var(--color-bg);padding:22px 20px"><div class="text-muted" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase">Tokens reconciled</div><div class="mono mt-2" style="font-size:30px;font-family:var(--font-heading)"><span data-counter data-base="9930671" data-swing="2400">9,930,671</span></div><div class="text-muted mt-1" style="font-size:12px">this hour</div></div>
@@ -200,11 +201,22 @@
     </div>
   </section>
   <section class="shell pb-8" data-reveal>
-    <div class="card elev-md" style="padding:44px;align-items:flex-start">
-      <span class="card-kicker">Next step</span>
-      <h2 style="max-width:22ch">Join the waitlist. There is a queue. There is not a queue.</h2>
-      <p class="text-muted" style="max-width:54ch">Five questions, none of which we read. You will receive a position number, which is stable, personal, and entirely made up.</p>
-      <a href="contact.html" class="btn btn-primary">Request access</a>
+    <div class="card elev-md" style="padding:44px">
+      <div class="grid gap-10 md:grid-cols-[1.1fr_0.9fr] items-center">
+        <div class="md:order-last">
+          <picture>
+            <source srcset="/uploads/gpt-wrapper-shawarma.webp" type="image/webp">
+            <img src="/uploads/gpt-wrapper-shawarma.jpg" width="880" height="480" loading="lazy" decoding="async" alt="A shawarma wrap in branded paper reading THE GPT WRAPPER — powered by OpenAI, freshly wrapped chat" style="display:block;width:100%;height:auto;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+          </picture>
+          <p class="text-muted mono" style="font-size:11px;margin:10px 0 0">Fig. 1 — the architecture, to scale.</p>
+        </div>
+        <div class="flex flex-col items-start" style="gap:10px">
+          <span class="card-kicker">Next step</span>
+          <h2 style="max-width:22ch">Join the waitlist. There is a queue. There is not a queue.</h2>
+          <p class="text-muted" style="max-width:54ch;margin:0">Five questions, none of which we read. You will receive a position number, which is stable, personal, and entirely made up.</p>
+          <a href="contact.html" class="btn btn-primary mt-2">Request access</a>
+        </div>
+      </div>
     </div>
   </section>
 </main>

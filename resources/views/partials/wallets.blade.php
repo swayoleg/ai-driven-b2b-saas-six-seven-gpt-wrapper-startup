@@ -1,0 +1,3 @@
+@foreach($wallets as $wallet)
+<div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:12px 14px"><div class="flex items-center gap-2"><span style="font-size:14px;font-family:var(--font-heading)">{{ $wallet->name }}</span><span class="tag tag-outline" style="font-size:10px">{{ $wallet->network }}</span><button type="button" class="btn btn-ghost ml-auto" style="font-size:12px" data-wallet-copy="{{ $wallet->address }}" data-copy-label="{{ __('Copy') }}" data-copied-label="{{ __('Copied') }}">{{ __('Copy') }}</button></div><div class="mono text-muted" style="font-size:11px;word-break:break-all;margin-top:6px">{{ $wallet->address }}</div></div>
+@endforeach

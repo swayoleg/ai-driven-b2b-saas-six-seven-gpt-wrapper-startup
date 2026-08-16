@@ -68,10 +68,11 @@
   <div class="card elev-sm mt-6" data-reveal style="padding:26px;align-items:flex-start">
     <span class="card-kicker">The Six Seven Weekly</span>
     <h3 style="font-size:20px;max-width:26ch">Одна нотатка на тиждень. Інколи дві. Ніколи сім.</h3>
-    <form class="flex flex-wrap gap-2 mt-2" onsubmit="return false" x-data="{ sent: false }">
-      <input class="input" style="width:260px" type="email" placeholder="you@company.com" required>
-      <button class="btn btn-primary" type="submit" x-on:click="sent = true">Підписатись</button>
+    <form class="flex flex-wrap gap-2 mt-2" x-data="newsletter" x-on:submit.prevent="submit()">
+      <input class="input" style="width:260px" type="email" placeholder="you@company.com" required x-model="email">
+      <button class="btn btn-primary" type="submit" x-bind:disabled="busy">Підписатись</button>
       <span class="text-muted self-center" style="font-size:12px" x-show="sent" x-cloak>Підписано. Нічого не збережено. Нічого не надійде.</span>
+      <span class="text-muted self-center" style="font-size:12px" x-show="error" x-cloak x-text="error"></span>
     </form>
   </div>
 </main>

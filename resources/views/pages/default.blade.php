@@ -1,8 +1,27 @@
 @extends('layouts.site')
 
+@php
+    $content = $page->content;
+    $hasWallets = str_contains($content, '[wallets]');
+
+    if ($hasWallets) {
+        $content = str_replace(
+            '[wallets]',
+            view('partials.wallets', ['wallets' => \App\Models\Wallet::activeOrdered()->get()])->render(),
+            $content
+        );
+    }
+@endphp
+
 @section('title', $page->meta_title ?: $page->title)
 @section('meta_description', $page->meta_description)
 
 @section('main')
-{!! $page->content !!}
+{!! $content !!}
 @endsection
+
+@if($hasWallets)
+    @push('scripts')
+    <script src="{{ asset_v('assets/wallets.js') }}"></script>
+    @endpush
+@endif

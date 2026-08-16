@@ -18,6 +18,20 @@ if (! function_exists('loc_url')) {
     }
 }
 
+if (! function_exists('asset_v')) {
+    /**
+     * Asset URL stamped with the file's mtime. The nginx vhost caches
+     * everything under /assets/ for a week, so without this a CSS or JS edit
+     * is invisible until the visitor hard-refreshes.
+     */
+    function asset_v(string $path): string
+    {
+        $file = public_path($path);
+
+        return asset($path).(is_file($file) ? '?v='.filemtime($file) : '');
+    }
+}
+
 if (! function_exists('alt_locale_url')) {
     /** URL of the current page in the other locale (for the EN / УКР switcher). */
     function alt_locale_url(string $targetLocale): string

@@ -29,6 +29,27 @@ jQuery(function ($) {
   });
 });
 
+/* ---------- form posting ---------- */
+/* The two forms live inside page content stored in the database, so there is no
+   Blade @csrf to lean on — the token comes from the <meta> tag in the layout. */
+function postForm(url, data) {
+  var meta = document.querySelector('meta[name="csrf-token"]');
+  return fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'X-CSRF-TOKEN': meta ? meta.getAttribute('content') : ''
+    },
+    body: JSON.stringify(data)
+  }).then(function (res) {
+    return res.json().catch(function () { return {}; }).then(function (body) {
+      if (!res.ok) { throw body; }
+      return body;
+    });
+  });
+}
+
 /* ---------- Alpine ---------- */
 document.addEventListener('alpine:init', function () {
 
@@ -38,6 +59,8 @@ document.addEventListener('alpine:init', function () {
       step: 1,
       total: 5,
       done: false,
+      busy: false,
+      error: '',
       position: 0,
       locale: 'en-US',
       form: { email: '', company: '', size: '', urgency: 'Yesterday', maturity: '', pain: '', budget: 'Undisclosed' },
@@ -52,15 +75,42 @@ document.addEventListener('alpine:init', function () {
       next() { if (this.canNext && this.step < this.total) this.step++; },
       back() { if (this.step > 1) this.step--; },
       submit() {
-        /* The position is a hash of the email. It is stable, which makes it
-           feel real, and meaningless, which makes it honest. */
-        var h = 0, s = this.form.email.toLowerCase();
-        for (var i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) % 100000; }
-        this.position = 6700 + (h % 4200);
-        this.locale = document.documentElement.lang === 'uk' ? 'uk-UA' : 'en-US';
-        this.done = true;
+        if (this.busy) return;
+        var self = this;
+        this.busy = true;
+        this.error = '';
+        /* The position is a stable hash of the email, now issued by the server
+           so the number stored matches the number shown. */
+        postForm('/waitlist', this.form).then(function (body) {
+          self.position = body.position;
+          self.locale = document.documentElement.lang === 'uk' ? 'uk-UA' : 'en-US';
+          self.done = true;
+        }).catch(function (body) {
+          self.error = (body && body.message) || 'Something went wrong. The queue is unmoved. Try again.';
+        }).finally(function () { self.busy = false; });
       },
       moveUp() { if (this.position > 67) this.position -= 1; }
+    };
+  });
+
+  /* Newsletter: subscribes for real, admits to nothing. */
+  Alpine.data('newsletter', function () {
+    return {
+      email: '',
+      sent: false,
+      busy: false,
+      error: '',
+      submit() {
+        if (this.busy) return;
+        var self = this;
+        this.busy = true;
+        this.error = '';
+        postForm('/newsletter', { email: this.email }).then(function () {
+          self.sent = true;
+        }).catch(function (body) {
+          self.error = (body && body.message) || 'That did not go through. Try again.';
+        }).finally(function () { self.busy = false; });
+      }
     };
   });
 

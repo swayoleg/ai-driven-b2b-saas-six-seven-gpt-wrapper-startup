@@ -53,6 +53,7 @@ _ide_helper.php
 _ide_helper_models.php
 .php-cs-fixer.cache
 /.claude/settings.local.json
+/.claude/agent-memory/
 
 # ------------------------------------------------------------------ editors
 /.codex

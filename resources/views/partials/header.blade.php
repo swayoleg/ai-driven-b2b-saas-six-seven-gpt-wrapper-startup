@@ -13,11 +13,13 @@
         <a href="{{ loc_url('about') }}" @if(request()->is('about', 'uk/about')) aria-current="page" @endif>{{ __('Company') }}</a>
         <a href="{{ loc_url('support') }}" @if(request()->is('support', 'uk/support')) aria-current="page" @endif>{{ __('Support the joke') }}</a>
       </nav>
+      @if(config('site.uk_enabled'))
       <div class="flex items-center gap-1" style="font-size:12px">
         <a href="{{ $locale === 'en' ? '#' : alt_locale_url('en') }}" class="btn btn-ghost" style="font-size:12px;padding:2px 6px;color:var({{ $locale === 'en' ? '--color-accent' : '--color-neutral-400' }}){{ $locale === 'en' ? ';text-decoration:underline' : '' }}">EN</a>
         <span class="text-muted">/</span>
         <a href="{{ $locale === 'uk' ? '#' : alt_locale_url('uk') }}" class="btn btn-ghost" style="font-size:12px;padding:2px 6px;color:var({{ $locale === 'uk' ? '--color-accent' : '--color-neutral-400' }}){{ $locale === 'uk' ? ';text-decoration:underline' : '' }}">УКР</a>
       </div>
+      @endif
       <a href="{{ loc_url('contact') }}" class="btn btn-primary">{{ __('Request access') }}</a>
     </div>
     <hr class="rule" style="margin:0">
