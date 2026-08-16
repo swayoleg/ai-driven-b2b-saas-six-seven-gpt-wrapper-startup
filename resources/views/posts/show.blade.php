@@ -2,6 +2,19 @@
 
 @section('title', $post->title.' — AI driven b2b SAAS six-seven GPT-wrapper startup')
 @section('meta_description', $post->excerpt)
+@section('og_title', $post->title)
+@section('og_type', 'article')
+
+@push('schema')
+{!! \App\Support\Schema::render(
+    \App\Support\Schema::post($post),
+    \App\Support\Schema::breadcrumbs([
+        __('Platform') => loc_url('/'),
+        __('Field Notes') => loc_url('blog'),
+        $post->title => loc_url('blog/'.$post->slug),
+    ])
+) !!}
+@endpush
 
 @section('main')
 <main class="shell pt-16 pb-8">

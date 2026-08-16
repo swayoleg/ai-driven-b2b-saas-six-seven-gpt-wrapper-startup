@@ -2,6 +2,15 @@
 
 @section('title', $page->meta_title ?: $page->title)
 @section('meta_description', $page->meta_description)
+@section('og_title', $page->meta_title ?: $page->title)
+
+@push('schema')
+{!! \App\Support\Schema::render(
+    {{-- concat, not prepend: prepend would mutate $posts and duplicate the featured card below --}}
+    \App\Support\Schema::blog($page, $featured ? collect([$featured])->concat($posts) : $posts),
+    \App\Support\Schema::breadcrumbs([__('Platform') => loc_url('/'), $page->title => loc_url('blog')])
+) !!}
+@endpush
 
 @section('main')
 <main class="shell pt-20">

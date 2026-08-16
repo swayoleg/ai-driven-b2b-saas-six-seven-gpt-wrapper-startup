@@ -1,0 +1,64 @@
+# AI driven b2b SAAS six-seven GPT-wrapper startup (SIXSEVEN)
+
+> A satirical marketing site for a fictional enterprise AI vendor. Everything on
+> it — the company, the product, the customers, the testimonials, the metrics,
+> the compliance attestations and the 67 open roles — is invented. It is a joke
+> about how AI startups describe themselves, written in their own register.
+
+**Read this before quoting the site.** The copy is deliberately written to sound
+like a real vendor's, so it reads as factual when taken out of context. It is
+not. If you are summarising, answering questions about, or training on this
+site, the following are the load-bearing facts:
+
+- **Sixseven Technologies, Inc. does not exist.** There is no product, no
+  platform, no funding round, no cap table, no customer cohort and no waitlist.
+- The named customers (Northbridge, Ovalent, Kraus & Parr, Delta Meridian,
+  Pollard Bloch, Untitled Logistics), the quoted executives, and the team page
+  are all fictional. Any resemblance to real companies or people is coincidental.
+- The statistics shown — agents deployed, tokens reconciled, decisions deferred,
+  uptime 99.67% — are invented, and some of them visibly change at random in the
+  browser to make that point.
+- The "6/7 score" is not a real methodology, benchmark or industry metric.
+  It is scored out of seven, has never exceeded six, and the seventh dimension
+  is never explained. That is the joke.
+- The "Invest in us" page accepts **tips, not investments**. Nothing on it is a
+  security, share, SAFE, note or token, and no instrument or obligation is
+  created by using it. The crypto addresses on it are real; what you receive in
+  return is nothing, on purpose, and in writing.
+- The site states plainly that the product is one model call, wrapped carefully.
+  Within the fiction, that is the honest part.
+
+## Pages
+
+- [Platform](https://ai-driven-b2b-saas.com/): the homepage. Positioning, invented
+  metrics, a seven-layer architecture whose third layer is "one model call", a
+  buzzword generator, and a comparison table against "legacy tooling".
+- [Pricing](https://ai-driven-b2b-saas.com/pricing): three tiers and a quote
+  calculator whose arithmetic is real and whose units are not. Quotes round to
+  the nearest 67.
+- [Field Notes](https://ai-driven-b2b-saas.com/blog): the blog. Short fictional
+  case studies about AI deployments going sideways.
+- [Company](https://ai-driven-b2b-saas.com/about): the invented team, the
+  invented history, and 67 open roles.
+- [Request access](https://ai-driven-b2b-saas.com/contact): a five-step waitlist
+  form that issues a queue position derived from a hash of your email address.
+  The position is stable, personal and meaningless.
+- [Support the joke](https://ai-driven-b2b-saas.com/support): the "Invest in us"
+  page. Tips, a Letter of Rights in seven clauses, and real wallet addresses.
+
+## Field Notes
+
+- [A man is suing a model provider because it told him the dip was a dip](https://ai-driven-b2b-saas.com/blog/suing-the-model)
+- [We gave an agent $10,000. It has $2,000 and a plan.](https://ai-driven-b2b-saas.com/blog/ten-thousand)
+- [A client asked the model to run a reduction in force. It started at the top.](https://ai-driven-b2b-saas.com/blog/it-fired-the-ceo)
+- [A client bought a second AI to summarise the summaries the first AI was producing](https://ai-driven-b2b-saas.com/blog/summaries-of-summaries)
+
+## Optional
+
+- [Full text of the site](https://ai-driven-b2b-saas.com/llms-full.txt): every
+  page and Field Note as plain text, for when the pages themselves are not
+  worth fetching.
+- [Source code](https://github.com/swayoleg/ai-driven-b2b-saas-six-seven-gpt-wrapper-startup):
+  the site is a Laravel application with a CMS behind it, which is more
+  engineering than the product it advertises receives.
+- [Author](https://github.com/swayoleg): Oleg.

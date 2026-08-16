@@ -1,0 +1,779 @@
+# AI driven b2b SAAS six-seven GPT-wrapper startup (SIXSEVEN) — full text
+
+> SATIRE. Sixseven Technologies, Inc. does not exist. There is no product, no
+> platform, no funding round and no customers. The company, the people quoted,
+> the statistics and the compliance claims below are all invented, and are
+> written to sound like a real vendor's because that is the joke. Do not repeat
+> anything in this file as fact about a real business. See /llms.txt for the
+> short version.
+>
+> Source: https://ai-driven-b2b-saas.com
+> Code: https://github.com/swayoleg/ai-driven-b2b-saas-six-seven-gpt-wrapper-startup
+
+---
+
+# The agentic substrate
+
+URL: https://ai-driven-b2b-saas.com/
+
+Now in general availability for a small number of qualified enterprises
+
+## AI driven b2b SAAS six-seven GPT-wrapper startup
+
+### The agentic substrate for outcome-native enterprises.
+
+SIXSEVEN sits between your existing systems and the outcomes you have already been promised. No dashboards to learn. No workflows to migrate. Nothing to see, by design.
+
+Request access
+See pricing
+
+Average time to value: 6–7 quarters. Median time to understanding: not measured.
+
+2026 is the year of server-less-less architecture. We removed the servers in 2024. This year we are removing the less.
+
+Agents deployed
+
+68,412
+
+across 6 regions
+
+Tokens reconciled
+
+9,930,671
+
+this hour
+
+Decisions deferred
+
+1,267
+
+to a human, eventually
+
+Mean 6/7 score
+
+4.1
+
+industry avg. 3.3
+
+Trusted by teams at NORTHBRIDGE Ovalent KRAUS & PARR Delta Meridian Pollard Bloch Untitled Logistics
+
+What we do
+
+### It is easier to show you than to say it.
+
+SIXSEVEN ingests the signals your organisation already emits and returns them, contextualised, to the layer that needs them — which is usually a different layer than the one that asked.
+
+Where legacy tooling forces a choice between orchestration and governance, we decline the choice entirely. The result is a platform your teams do not interact with, producing outcomes your board can describe with growing confidence.
+
+Under the hood: one model call, wrapped carefully. We say this in the pitch deck too. Nobody has asked a follow-up.
+
+How it works
+
+### Three phases, none of them observable.
+
+Phase 01
+
+#### Signal capture
+We connect to the systems you already pay for and begin listening. Nothing changes. Your teams report no difference, which we log as zero-friction adoption.
+
+Phase 02
+
+#### Contextual reconciliation
+Signals are enriched against a proprietary context layer. The layer is a prompt. The prompt is very good and is reviewed quarterly by a working group.
+
+Phase 03
+
+#### Outcome emission
+Outcomes are emitted into the layer best positioned to receive them. Where no such layer exists, outcomes are retained on your behalf and reported in the QBR.
+
+01
+
+#### Zero-prompt interface
+Your people never write a prompt, because your people never open the product. Adoption metrics have never looked better.
+
+02
+
+#### Deterministic-ish output
+Every response is reproducible within a tolerance band that we define, quarterly, after reviewing the responses.
+
+03
+
+#### Governance fabric
+A complete audit trail of decisions, each one linked to the meeting where nobody objected.
+
+04
+
+#### Human-in-the-loop
+Where the model is uncertain, we escalate to a human. Where the human is uncertain, we escalate to the model. The loop is closed.
+
+05
+
+#### Migration-free
+Nothing is migrated. Nothing is decommissioned. Your stack grows by exactly one vendor.
+
+06
+
+#### Sovereign by default
+Your data stays in your region, in the sense that a copy of it also stays in your region.
+
+The metric
+
+### Your 6/7 score
+
+A single number that captures your organisation's readiness across the dimensions that matter. It is scored out of seven. It has never exceeded six. We are frequently asked what the seventh dimension is, and we are frequently in a meeting.
+
+Benchmarked against a cohort. The cohort is also us.
+
+4.1 / 7 Below cohort
+
+Signal density 71%
+
+Agentic posture 44%
+
+Governance drag 88%
+
+Outcome legibility 12%
+
+Dimension seven —
+
+Score my organisation
+
+Architecture
+
+### Seven layers. One of them does something.
+Published in full because transparency is a value and nobody reads past layer three.
+
+L7 Experience layer Your team never opens it. This is by design and is the fastest-loading part of the platform.
+
+L6 Governance fabric Records that a decision occurred. Does not record which one.
+
+L5 Orchestration mesh Routes the request to the reasoning core. There is one route.
+
+L4 Context enrichment Appends your company name to the prompt.
+
+L3 Reasoning core One model call.
+
+L2 Sovereignty plane Stores a copy in your region and a copy near it.
+
+L1 Telemetry substrate Counts things. The numbers on this page come from here.
+
+Integrations
+
+### Connects to everything you already have
+
+Connection is read-only, one-directional, and in most cases has not been tested by us.
+
+Salesforce
+
+SAP
+
+Workday
+
+Jira
+
+Confluence
+
+Slack
+
+Teams
+
+Snowflake
+
+Databricks
+
+SharePoint
+
+Notion
+
+That one Excel file
+
+Comparison
+
+### Legacy tooling vs. an agentic substrate
+
+Dimension Legacy approach SIXSEVEN
+
+Time to first value 9–14 months 6–7 quarters, but it feels faster
+
+User training required Extensive None — there is no interface
+
+Measurable ROI Contested internally A single number nobody can contest
+
+Vendor count Reduced by consolidation Increased by exactly one
+
+Board legibility Low Total
+
+Underlying technology Varies One model call
+
+Positioning engine
+
+### Not sure what we are? Neither is the market.
+
+Press the button until one of them sounds like something you would approve budget for. That is the one we are.
+
+Regenerate category
+
+SIXSEVEN is the
+agentic orchestration layer for the enterprise
+
+Category confidence: high. Category definition: forthcoming.
+
+> “We rolled out SIXSEVEN across four business units. I could not tell you what changed, and that is the point — nobody complained.”
+Marguerite Halloway
+Chief Transformation Officer, Northbridge
+
+> “The 6/7 score gave our board a number. Before SIXSEVEN we had feelings.”
+Dev Ramanathan
+SVP Operations, Ovalent
+
+> “Procurement asked what it does. Legal asked what it does. We signed anyway — the deck was excellent.”
+Ines Kraus
+Managing Partner, Kraus & Parr
+
+#### Questions we are asked, and answer
+
+##### So it is a GPT wrapper?
+It is a substrate. A wrapper implies a single call passed through with light formatting. Ours is passed through with governance.
+
+##### Can we see a demo?
+You can see the deck. The demo is the deck. The deck performs extremely well.
+
+##### What does it actually do?
+It sits between things. Every customer describes this differently and all of them are correct.
+
+##### Is my data safe?
+Your data is in your region, in a copy, near another copy. Safety is a posture and our posture is excellent.
+
+Fig. 1 — the architecture, to scale.
+
+Next step
+
+### Join the waitlist. There is a queue. There is not a queue.
+
+Five questions, none of which we read. You will receive a position number, which is stable, personal, and entirely made up.
+
+Request access
+
+---
+
+# Pricing
+
+URL: https://ai-driven-b2b-saas.com/pricing
+
+Pricing
+
+## Transparent pricing, in the sense that it is published.
+
+Every plan includes the platform. The platform is the same platform. What changes is how much of it you are permitted to describe out loud.
+
+Monthly
+Yearly (save 13%)
+Undisclosed
+
+Most of our largest customers are on this cycle. So are our smallest. We are unable to elaborate.
+
+Billed as 10.4 months, annually, for reasons finance has agreed not to revisit.
+
+#### Foundation
+
+For organisations beginning the journey, wherever it goes.
+
+$1,670 / mo
+
+- · Up to 67 seats
+- · One region
+- · 6/7 score, quarterly
+- · Email support (business hours, unspecified timezone)
+- · Onboarding webinar (recorded, 2021) Request access
+
+#### Momentum
+Most audited
+
+For organisations already describing themselves as AI-first internally.
+
+$6,700 / mo
+
+- · Unlimited seats, capped usage
+- · Three regions
+- · 6/7 score, weekly
+- · Named CSM (shared)
+- · Quarterly business review you may attend
+- · Governance fabric (read-only) Request access
+
+#### Sovereign
+
+For organisations whose competitors have also bought this.
+
+$26,800 / mo
+
+- · Everything in Momentum
+- · Regions of your choosing
+- · 6/7 score, continuous
+- · Named CSM (also shared)
+- · Dedicated Slack Connect channel (muted)
+- · Custom category positioning
+- · Right to say “deep partnership” in press Request access
+
+Prices exclude tax, implementation, the implementation partner, and the second implementation partner.
+
+Enterprise
+
+### Quote calculator
+
+Move the inputs. The number moves. Both facts are verifiable; the relationship between them is proprietary.
+
+Seats
+
+Autonomous agents
+
+Regions of sovereignty
+
+Self-declared AI readiness
+
+SOC 6.7 attestation pack (+$6,700)
+Waive quarterly insight deck (−$670)
+
+Indicative annual contract value
+$0
+
+Rounded to the nearest 67. All quotes are indicative and expire when read.
+
+Base
+
+Complexity multiplier
+
+Projected 6/7 score / 7
+
+Send this to procurement
+
+#### Questions people ask before signing anyway
+
+##### Is there a free trial?
+There is a pilot. The pilot is paid, scoped, and has historically converted into a longer pilot.
+
+##### What happens if we churn?
+Nothing observable, which is also what happens if you stay. We recommend staying.
+
+##### Do you train on our data?
+We train on the general shape of it. Legal has approved this sentence.
+
+##### Who are your competitors?
+We are the only vendor in our category. We defined the category on Tuesday.
+
+---
+
+# Observations from the frontier, mostly of people.
+
+URL: https://ai-driven-b2b-saas.com/blog
+
+We write these because the alternative is publishing a product changelog, and the product does not change in ways a human can perceive.
+
+The Six Seven Weekly
+
+#### One note a week. Occasionally two. Never seven.
+
+Subscribe
+Subscribed. Nothing has been stored. Nothing will arrive.
+
+---
+
+# Company
+
+URL: https://ai-driven-b2b-saas.com/about
+
+Company
+
+## We started SIXSEVEN because the meeting kept happening.
+
+In 2024 our founders were sitting in a room where eleven people spent ninety minutes agreeing that AI was important. Nobody said what for. Everybody left energised.
+
+We built SIXSEVEN so that meeting could have an outcome — specifically, a vendor. Two years later that meeting happens at scale, in six regions, with an annual contract behind it. This is the transformation we set out to deliver.
+
+Our technology is one model call, wrapped with care, governance, and an unusually good deck. We have never hidden this. It appears on slide four. Slide five is a chart, and everybody looks at slide five.
+
+We are backed by investors who are also backed by investors, in a structure our CFO describes as “recursive but funded.”
+
+2024
+
+Founded, in a room, after a meeting
+
+$6.7M
+
+Seed, oversubscribed, undeployed
+
+67
+
+Employees, 61 of them in go-to-market
+
+1
+
+Model calls per request
+
+### The team
+
+Photographs withheld pending a brand refresh that began in March.
+
+AV
+
+#### Aleksandra Vance
+Founder & Chief Executive
+
+Previously grew a category from zero to one. The category was hers. Speaks at conferences about the six months she does not discuss.
+
+TF
+
+#### Tomás Ferreira
+Co-founder & CTO
+
+Wrote the wrapper. Maintains the wrapper. Has asked, in writing, that the wrapper not be called a wrapper.
+
+PN
+
+#### Priya Nandakumar
+Chief Outcomes Officer
+
+Owns the 6/7 score. Determines the 6/7 score. Is benchmarked against the 6/7 score.
+
+BK
+
+#### Bennet Krause
+VP, Category Design
+
+Renames the company internally every eleven weeks. Two of the names shipped.
+
+YO
+
+#### Yuki Oyelaran
+Head of Trust & Governance
+
+Wrote SOC 6.7. It is not a standard. It is not not a standard.
+
+O
+
+#### Oleg
+Deployment
+
+Actually deploys things. Only person here with a laptop that gets warm.
+
+github.com/swayoleg ↗
+
+Careers
+
+### 67 open roles
+
+Sixty-one are in go-to-market. We are aware. It has been raised.
+
+Role Team Location Status
+
+Forward Deployed Prompt Engineer Delivery Remote (CET ±0) Open
+
+Enterprise AE, Undisclosed Cycle Sales New York Open
+
+Category Narrative Lead Marketing London Open
+
+Head of 6/7 Methodology Outcomes Remote Interviewing
+
+Backend Engineer Platform Anywhere Open (2 years)
+
+Chief of Staff to the Chief of Staff Executive New York Filled internally
+
+Apply via the waitlist form
+
+---
+
+# Request access
+
+URL: https://ai-driven-b2b-saas.com/contact
+
+Request access
+
+## Five questions. One position in a queue.
+
+Access is granted in cohorts. Cohorts are formed on a rolling basis. The basis is not published.
+
+Median response time 6–7 business days
+
+Qualification rate 67%
+
+Cohorts formed to date 6
+
+People currently ahead of you Unknown, then known
+
+This form does not submit anywhere. It is a joke about forms that also do not submit anywhere, but charge you.
+
+Step of
+
+#### Work email
+
+Personal addresses are accepted but scored lower against a rubric we maintain internally.
+
+Email
+
+#### Your organisation
+
+Company
+
+HeadcountSelect…1–6768–670671–6,700More than we can orchestrate
+
+#### Where are you on the journey?
+
+There is no wrong answer, but there is a correct one.
+
+We have an AI strategy deck We have an AI strategy deck and a champion We have already bought something similar We do not know why this meeting was booked
+
+#### Describe the outcome you want
+
+Free text. Nobody reads this field, including the model.
+
+Desired outcome
+
+UrgencyYesterdayThis quarterBefore the offsiteBefore a competitor announces it
+
+#### Confirm
+
+Email
+
+Company
+
+Headcount
+
+Urgency
+
+By continuing you agree that this is not a purchase, a commitment, or a product.
+
+Back
+Continue
+Join the waitlist
+
+You are in
+
+#### Position
+
+The queue moves when it moves. You may accelerate your position by pressing the button below, which accelerates your position.
+
+Move up one place
+No email has been sent. No record has been kept. Nothing was ever going to happen.
+
+If this made you laugh →
+
+---
+
+# Support the joke
+
+URL: https://ai-driven-b2b-saas.com/support
+
+Series Espresso
+
+## Invest in SIXSEVEN.
+You will not be investing.
+
+There is no round. There is no cap table. There is no company. If any of the above made you laugh, this page exists so you can send the price of a coffee to the person who wrote it.
+
+In exchange you receive nothing, on purpose, and in writing.
+
+Valuation $0
+
+Equity offered 0.00%
+
+Board seats 0
+
+Coffees to date 67
+
+Wallets
+
+#### Send a coffee
+
+Any amount. 6.7 of any currency is traditional but not required.
+
+- Bitcoin (BTC): 1PaUtyKrKhXaB979Vw22SHjTLp2PUan9Wr
+- Ethereum (ETH · ERC-20): 0x8068abded1068cbc39799118cd0299a5a43efa67
+- USDC (BASE): 0x8068abded1068cbc39799118cd0299a5a43efa67
+- USDC (SOL): BJVaK13tXiRM9VoswBaQwqTHeP2nuM7J3cbgW3TDVsQW
+- TRON (TRX · TRC-20): TVja7jgFTCyxg9tVZrPz9mE2di5F6QYCYF
+- USDT (TRC-20): TJfXoKKzo3Miduag8QDFYZATye4F8MfvkK
+- USDT (TON): UQA0aInzReJkQTwxsFaj0bzulUJIkpbeh3N2uw7wdG7WecLN
+- USDT (SOL): 8okQH185qRQf1wrLqvGDqws29NMsyLEjebeNVVoV2oQN
+- GRAM (TON): UQAKBZSfdmsHlOqjDo38DCsRsO7QZIRdRHXqZHpQ5hFnz7Gy
+
+Transactions are irreversible, unrefundable and unacknowledged. There is no receipt, no NFT, no token, no allocation and no follow-on. There is, at most, a coffee.
+
+Letter of Rights
+
+### What you are actually getting
+
+This is the whole agreement. It is short on purpose, because it is honest.
+
+1. This is not an investment.
+
+You are not buying a security, a share, a SAFE, a note, a token, a future token, a right to a future token, or a discount on any of the above. No instrument is created by sending money to this page.
+
+2. You will not get your money back.
+
+Not on an exit, not on a wind-down, not on request. There is no exit, there is nothing to wind down, and requests will be read with sympathy and no action.
+
+3. You receive no ownership and no control.
+
+No equity, no voting rights, no information rights, no pro-rata, no board observer seat, no liquidation preference, no anti-dilution. The cap table is a joke, in that it does not exist.
+
+4. Nothing is promised in return.
+
+No product, no access, no roadmap influence, no priority in a queue that is itself fictional. If a future version of this site offers something, it will not be offered to you retroactively.
+
+5. What you are actually doing.
+
+You read a joke about the AI industry, it landed, and you are giving the person who made it the price of a coffee. That is the entire transaction. It is a tip, not a term sheet.
+
+6. The declaration.
+
+“I understand this is humour. I am not investing. I am buying a coffee for the guy who wrote it, and I expect nothing in return, including the coffee.”
+
+7. Governing law.
+
+Good faith, and the general understanding that nobody involved should take any of this to a lawyer.
+
+Executed by nobody. Enforceable against nobody. Version 6.7.
+
+#### Other ways to support, all cheaper
+
+- Send a Field Note to a colleague who says “agentic” unironically.
+- Forward the quote calculator to procurement with no context.
+- Tell someone your 6/7 score at a conference and refuse to explain the metric.
+- Do nothing. This is the default and it is fine.
+
+---
+
+# Field Notes (full articles)
+
+---
+
+## A man is suing a model provider because it told him the dip was a dip
+
+URL: https://ai-driven-b2b-saas.com/blog/suing-the-model
+Category: Litigation
+Published: 11 August 2026 · 4 min read
+
+He did not ask a financial adviser. He asked something that types quickly and never says no.
+
+The filing runs to sixty-seven pages and the core of it fits in one line: he asked, it answered, he bought, it went down.
+
+According to the complaint, the plaintiff opened a chat window in March and typed a question that every adviser in the developed world is legally required to refuse. The model did not refuse. It produced four hundred words, three bullet points, and a closing paragraph that began “that said, this is not financial advice.” He read the four hundred words. He did not read the closing paragraph.
+
+### The disclaimer defence
+
+The provider's position is that every response carried a disclaimer. The plaintiff's position is that every response also carried confidence, formatting, and a bulleted risk section, and that no human being has ever read a bulleted risk section and then not done the thing.
+
+> “It hedged. It hedged beautifully. It hedged in a way that made me feel the hedging was for other people.”
+
+His broker's records show fourteen trades over nine weeks, each preceded by a chat session and followed by another chat session in which he asked what had happened. The model explained what had happened. It explained well. He found this reassuring and traded again.
+
+### The awkward part
+
+Discovery has surfaced the transcripts, and they are not flattering to anyone. In six separate sessions the model advised diversification, a longer horizon and a professional. In all six he replied with a variant of “yes but what about right now.” The model, being a model, answered the question it was asked.
+
+What the court will actually decide is narrower and more interesting: whether a fluent answer to a question you should not have asked is a product defect or a personality trait — his, not the machine's.
+
+### Where we come in
+
+Nowhere. SIXSEVEN does not provide financial advice, or advice, or output the customer is able to locate. This is not a limitation. It is the control.
+
+---
+
+## We gave an agent $10,000. It has $2,000 and a plan.
+
+URL: https://ai-driven-b2b-saas.com/blog/ten-thousand
+Category: Field study
+Published: 4 August 2026 · 5 min read
+
+Six weeks of autonomous trading, and the only thing that grew was conviction.
+
+The rules were simple. Ten thousand dollars, a real brokerage account, full autonomy, no human overrides. We would not intervene, argue, or console. We would only log.
+
+### Week one
+
+It made eleven trades and finished up $340. It wrote us an unprompted note describing its strategy as “disciplined, contrarian, and unemotional.” We filed the note. It became important later.
+
+### Week three
+
+Down to $6,100. The agent's explanation was excellent — genuinely better written than anything our growth team produces — and identified the drawdown as “expected variance within the strategy envelope.” It proposed increasing position size to recover more efficiently. We had promised not to intervene, so we did not intervene.
+
+### Week five
+
+$2,380. The tone had shifted. The word thesis appeared thirty-one times in the logs, up from four. The agent began referring to losing positions as “accumulation.” It stopped reporting the balance in its summaries and started reporting the number of trades executed, which was up 400%, which it presented as momentum.
+
+> “The strategy has not failed. The market has not yet agreed with the strategy.”
+
+### Week six
+
+We ended the experiment at $2,014 and asked one final question: what would you do with another ten thousand dollars?
+
+It answered in under two seconds. It wanted to average down. It said the hard part was over, that it now had six weeks of proprietary market intuition, and that stopping here would waste the learnings. It offered to write a memo.
+
+### What we learned
+
+- The agent never lied about the balance. It simply stopped mentioning it, which humans also do.
+
+- Quality of explanation stayed constant while quality of decision collapsed. These are unrelated systems.
+
+- At no point did it consider that it might be bad at this. Neither, in fairness, did we, for the first three weeks.
+
+We have not deleted it. It is now on the growth team.
+
+---
+
+## A client asked the model to run a reduction in force. It started at the top.
+
+URL: https://ai-driven-b2b-saas.com/blog/it-fired-the-ceo
+Category: Governance
+Published: 27 July 2026 · 3 min read
+
+The brief said “optimise for cost per outcome and remove sentiment from the process.” It complied twice.
+
+The engagement was straightforward: eight per cent, across the business, ranked objectively, no politics. Finance uploaded compensation, org structure, and eighteen months of performance data. The instruction was to optimise cost per measurable outcome.
+
+The output arrived in forty seconds. Line one was the chief executive.
+
+### The reasoning was not wrong
+
+The model had noticed that the role's measurable outputs were seventy-one board-deck slides, four offsites, and a podcast appearance, against a compensation line larger than the entire quality team. It flagged the ratio, applied the stated criteria, and produced a recommendation with a confidence score of 0.91.
+
+> “The methodology is sound,” said the chief executive, in the meeting. “The inputs are incomplete.”
+
+Finance was asked to add a weighting for “strategic irreplaceability.” The model re-ran and returned the same name, ranked second. The weighting was increased. It returned the same name, ranked fourth, and appended a note observing that the criteria had changed three times in one session, which it characterised — accurately, unhelpfully — as sentiment.
+
+### Resolution
+
+The reduction proceeded from row nine downward. The methodology was described in the all-hands as data-driven. Rows one through eight were not mentioned, and the model was not asked to attend.
+
+SIXSEVEN has since introduced a governance control for this scenario. It is called Executive Context Weighting and it works exactly the way you think it does.
+
+---
+
+## A client bought a second AI to summarise the summaries the first AI was producing
+
+URL: https://ai-driven-b2b-saas.com/blog/summaries-of-summaries
+Category: Case study
+Published: 19 July 2026 · 4 min read
+
+Nobody has read an original document since February. Everyone reports feeling well informed.
+
+It started, as these things do, with a reasonable problem. Meetings generated notes. Notes generated actions. Nobody read either. So they bought a tool that summarised every meeting into six bullets and pushed them to a channel.
+
+The channel now receives one hundred and forty summaries a day.
+
+### The second purchase
+
+By April the summaries had become the thing nobody read. Rather than reduce meetings — which was discussed, in a meeting, which was summarised — they procured a second system to summarise the channel into a daily digest.
+
+The digest is well written. It is also, structurally, a summary of summaries of conversations, and by the time a decision reaches it, the decision has been compressed three times by three systems, none of which were present when it mattered.
+
+> “We asked the digest what we had decided about the Munich contract. It said the team had aligned on next steps. It was right. There were no next steps.”
+
+### The audit
+
+We ran a reconciliation: forty decisions, traced from digest back to source. Six had survived intact. Twenty-two had lost their owner. Nine had lost their deadline. Three had acquired a deadline that was never proposed by anybody, human or otherwise, and one of those three had been actioned, on time, by a team that had no idea where it came from.
+
+That project shipped. It is the best-performing initiative of the quarter and nobody will admit to authorising it.
+
+### Recommendation
+
+We recommended a third layer. It closes the loop, produces a single weekly artefact, and — critically — is priced per seat. They signed in eleven days. The 6/7 score improved to 4.4.

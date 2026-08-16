@@ -15,6 +15,11 @@
 
 @section('title', $page->meta_title ?: $page->title)
 @section('meta_description', $page->meta_description)
+@section('og_title', $page->meta_title ?: $page->title)
+
+@push('schema')
+{!! \App\Support\Schema::render(\App\Support\Schema::webPage($page)) !!}
+@endpush
 
 @section('main')
 {!! $content !!}

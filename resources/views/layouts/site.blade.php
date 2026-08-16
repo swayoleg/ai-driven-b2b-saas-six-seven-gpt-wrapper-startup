@@ -6,6 +6,28 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <title>@yield('title', config('app.name'))</title>
 <meta name="description" content="@yield('meta_description')">
+<link rel="canonical" href="{{ url()->current() }}">
+
+{{-- Sharing. og:image is absolute via asset(), so it follows APP_URL per environment. --}}
+<meta property="og:site_name" content="{{ config('app.name') }}">
+<meta property="og:type" content="@yield('og_type', 'website')">
+<meta property="og:url" content="{{ url()->current() }}">
+<meta property="og:title" content="@yield('og_title', config('app.name'))">
+<meta property="og:description" content="@yield('meta_description')">
+<meta property="og:locale" content="{{ app()->getLocale() === 'uk' ? 'uk_UA' : 'en_GB' }}">
+<meta property="og:image" content="{{ asset('uploads/og-image.jpg') }}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A shawarma wrapped in branded paper reading THE GPT WRAPPER — powered by OpenAI, freshly wrapped chat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="@yield('og_title', config('app.name'))">
+<meta name="twitter:description" content="@yield('meta_description')">
+<meta name="twitter:image" content="{{ asset('uploads/og-image.jpg') }}">
+<meta name="twitter:image:alt" content="A shawarma wrapped in branded paper reading THE GPT WRAPPER">
+
+{!! \App\Support\Schema::render(\App\Support\Schema::site()) !!}
+@stack('schema')
 <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16.png') }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32.png') }}">

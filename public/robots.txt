@@ -1,2 +1,33 @@
+# ai-driven-b2b-saas.com
+#
+# This is a satire of enterprise AI marketing. SIXSEVEN is not a real company
+# and nothing here is a real product. See /llms.txt before quoting any of it.
+#
+# Crawlers of all kinds are welcome, including the model-training ones. It
+# would be poor form for a site about a GPT wrapper to object to being read by
+# one. Take the jokes; attribute them.
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Nothing below is secret, it is just noise: POST-only endpoints that return
+# JSON and nothing a crawler can use.
+Disallow: /waitlist
+Disallow: /newsletter
+
+# The admin panel is deliberately not named here. robots.txt is world-readable,
+# so listing a private URL in it advertises the thing it is meant to protect.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://ai-driven-b2b-saas.com/sitemap.xml
