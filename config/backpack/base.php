@@ -24,7 +24,10 @@ return [
 
     // The prefix used in all base routes (the 'admin' in admin/dashboard)
     // You can make sure all your URLs use this prefix by using the backpack_url() helper instead of url()
-    'route_prefix' => 'admin',
+    // Set BACKPACK_ROUTE_PREFIX in .env to move the panel off the obvious URL.
+    // The public catch-all route in routes/web.php reads this too, so whatever
+    // you choose is automatically excluded from page-slug lookups.
+    'route_prefix' => env('BACKPACK_ROUTE_PREFIX', 'admin'),
 
     // The web middleware (group) used in all base & CRUD routes
     // If you've modified your "web" middleware group (ex: removed sessions), you can use a different

@@ -10,6 +10,13 @@ use Illuminate\Database\Seeder;
  * Imports the original static markup (markup/Joke AI startup satire site)
  * into the CMS: one Page per static page (EN + UK translations) and one
  * Post per "Field Note". Internal .html links are rewritten to app URLs.
+ *
+ * DESTRUCTIVE. Every row is written with updateOrCreate, so running this
+ * overwrites whatever has been edited in the admin panel with the contents of
+ * markup/. That is what you want after breaking a page's HTML, and what you
+ * very much do not want on a live site. Note that `php artisan db:seed` runs
+ * it as part of DatabaseSeeder — on production, always name the seeder you
+ * actually mean, e.g. `db:seed --class=AdminUserSeeder`.
  */
 class SiteContentSeeder extends Seeder
 {

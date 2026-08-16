@@ -30,6 +30,15 @@ Route::middleware('throttle:5,1')->group(function () {
     Route::post('/newsletter', [FormController::class, 'subscribe'])->name('newsletter.store');
 });
 
-// Keep last: this matches any single-segment slug.
+// Keep last: this matches any single-segment slug, so anything that is not a
+// CMS page has to be excluded here. The admin prefix is read from config
+// rather than hardcoded — otherwise moving the panel via BACKPACK_ROUTE_PREFIX
+// would leave its URL shadowed by a page lookup.
+$adminSegment = explode('/', (string) config('backpack.base.route_prefix', 'admin'))[0];
+$reserved = implode('|', array_map(
+    fn (string $segment) => preg_quote($segment, '#'),
+    array_filter([$adminSegment, 'uk'])
+));
+
 Route::get('/{slug}', [SiteController::class, 'page'])->name('page')
-    ->where('slug', '^(?!admin$|uk$)[a-z0-9-]+$');
+    ->where('slug', '^(?!(?:'.$reserved.')$)[a-z0-9-]+$');
