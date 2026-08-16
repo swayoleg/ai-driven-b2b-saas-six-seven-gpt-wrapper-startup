@@ -1,0 +1,21 @@
+/* Sixseven — a few things Tailwind utilities can't say.
+   Everything else comes from the Nocturne token sheet. */
+:root { --shell: 1160px; }
+.shell { width: min(100% - 48px, var(--shell)); margin-inline: auto; }
+.rule { height:1px; border:0; background: linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent); }
+.glow { position:absolute; border-radius:9999px; filter: blur(90px); pointer-events:none; }
+.eyebrow { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color: var(--color-accent); }
+.mono { font-variant-numeric: tabular-nums; font-feature-settings:"tnum"; }
+.link-quiet { color: inherit; text-decoration: none; }
+.link-quiet:hover { color: var(--color-accent); }
+.prose p { margin: 0 0 18px; font-size: 16px; line-height: 1.75; color: color-mix(in srgb, var(--color-text) 82%, transparent); }
+.prose h2 { font-size: 24px; margin: 40px 0 12px; }
+.prose blockquote { margin: 28px 0; padding-left: 20px; border-left: 2px solid var(--color-accent); font-size: 18px; line-height:1.6; }
+.prose ul { margin: 0 0 18px; padding-left: 20px; color: color-mix(in srgb, var(--color-text) 82%, transparent); }
+.prose li { margin-bottom: 8px; }
+[x-cloak] { display: none !important; }
+
+/* Scroll reveal — opt in with data-reveal; honours reduced-motion. */
+[data-reveal] { opacity: 0; transform: translateY(16px); transition: opacity .65s cubic-bezier(.2,.6,.2,1), transform .65s cubic-bezier(.2,.6,.2,1); will-change: opacity, transform; }
+[data-reveal].is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { [data-reveal] { opacity: 1 !important; transform: none !important; transition: none; } }

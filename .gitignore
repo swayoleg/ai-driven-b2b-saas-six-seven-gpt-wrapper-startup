@@ -1,0 +1,69 @@
+# ------------------------------------------------------------------ secrets
+.env
+.env.backup
+.env.production
+# Backpack PRO license credentials. Required for `composer install` but must
+# never be committed — see README for how to recreate it.
+/auth.json
+
+# ------------------------------------------------------------- dependencies
+/vendor
+/node_modules
+
+# -------------------------------------------------------------- build output
+# Tailwind/Alpine/jQuery come from CDNs, so there is normally nothing here —
+# these stay in case a Vite build is added later.
+/public/build
+/public/hot
+/public/fonts-manifest.dev.json
+
+# NOTE: public/assets, public/_ds and public/uploads are NOT ignored. They are
+# the site's real stylesheet, design-system tokens and images (copied out of
+# markup/) and the app is broken without them.
+
+# ------------------------------------------------------------------ runtime
+# Symlink recreated by `php artisan storage:link`.
+/public/storage
+/storage/*.key
+/storage/pail
+# Backpack asset cache, rebuilt on demand by basset.
+/storage/basset
+*.log
+
+# ---------------------------------------------------------------- databases
+# The app runs on MariaDB; any SQLite file here is a leftover. `aib2b` is the
+# stray db created when DB_DATABASE=aib2b was read by the sqlite driver.
+/aib2b
+*.sqlite
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+
+# ------------------------------------------------------------- markup source
+# markup/ itself is tracked — SiteContentSeeder parses it — but not the
+# original download or the design tool's thumbnail cache (a file, not a dir).
+/markup/*.zip
+.thumbnail
+
+# ------------------------------------------------------------------- tooling
+/.phpunit.cache
+.phpunit.result.cache
+.phpactor.json
+_ide_helper.php
+_ide_helper_models.php
+.php-cs-fixer.cache
+/.claude/settings.local.json
+
+# ------------------------------------------------------------------ editors
+/.codex
+/.cursor/
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# ----------------------------------------------------------------------- os
+.DS_Store
+Thumbs.db
+Homestead.json
+Homestead.yaml
