@@ -59,5 +59,6 @@
 {{-- Page-specific scripts (e.g. the wallet clipboard helper) are pushed here
      so they only load on the pages that actually need them. --}}
 @stack('scripts')
+@include('partials.analytics')
 </body>
 </html>
