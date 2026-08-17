@@ -27,6 +27,6 @@
 
 @if($hasWallets)
     @push('scripts')
-    <script src="{{ asset_v('assets/wallets.js') }}"></script>
+    <script src="{{ asset_v('assets/wallets.min.js') }}"></script>
     @endpush
 @endif

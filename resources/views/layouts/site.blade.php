@@ -35,22 +35,29 @@
 <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('icon-512.png') }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
 <meta name="theme-color" content="#161826">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    corePlugins: { preflight: false },
-    theme: { extend: {
-      colors: { bg: 'var(--color-bg)', surface: 'var(--color-surface)', ink: 'var(--color-text)', accent: 'var(--color-accent)', divider: 'var(--color-divider)', section: 'var(--color-section)' },
-      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
-      borderRadius: { sm: 'var(--radius-sm)', md: 'var(--radius-md)', lg: 'var(--radius-lg)' },
-    } }
-  };
-</script>
-<link rel="stylesheet" href="{{ asset('_ds/nocturne-f619cc82-e259-47de-8eed-259febfc742a/styles.css') }}">
-<link rel="stylesheet" href="{{ asset_v('assets/site.css') }}">
-<script defer src="{{ asset_v('assets/app.js') }}"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+{{-- Everything below is built by gulp and served from this origin. Tailwind,
+     Alpine and jQuery used to come off three CDNs and Inter off a fourth, via
+     an @import inside the design-system sheet; that was ~2.3s of render-blocking
+     requests on mobile. See gulpfile.js. --}}
+
+{{-- The one font subset every page needs. @font-face is in the inline critical
+     block below, so this only buys a round trip — but it is the round trip
+     between first paint and the text being in Inter. --}}
+<link rel="preload" as="font" type="font/woff2" href="{{ asset('fonts/inter-v20-latin.woff2') }}" crossorigin>
+
+{{-- Above-the-fold CSS, inlined so the first paint needs no network at all. --}}
+@include('partials.critical')
+
+{{-- The full stylesheet, loaded without blocking the render: the browser
+     fetches it at low priority as a preload, then the onload handler promotes
+     it to a real stylesheet. --}}
+<link rel="preload" as="style" href="{{ asset_v('assets/app.min.css') }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ asset_v('assets/app.min.css') }}"></noscript>
+
+{{-- jQuery + the site's own script + Alpine, concatenated in that order —
+     app.js registers its Alpine components on `alpine:init`, so it has to be
+     parsed before Alpine's runtime. --}}
+<script defer src="{{ asset_v('assets/app.min.js') }}"></script>
 </head>
 <body class="antialiased">
 @include('partials.header')

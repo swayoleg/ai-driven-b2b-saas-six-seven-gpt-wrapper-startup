@@ -1,5 +1,9 @@
 /* Nocturne — design-system tokens and component classes. This file is the source of truth for the system's look; retune it here and see readme.md. */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* The Google Fonts @import that used to live on this line was a chained
+   render-block (this sheet -> googleapis -> gstatic). Inter is now self-hosted:
+   the @font-face rules are in resources/css/fonts.css and the woff2 files in
+   public/fonts/, both concatenated ahead of this file into assets/app.min.css
+   by gulp. Nothing else in this sheet changed. */
 
 :root {
   --color-bg: #161826;

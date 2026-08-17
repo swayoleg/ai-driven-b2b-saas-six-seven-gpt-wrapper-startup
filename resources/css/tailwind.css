@@ -1,0 +1,7 @@
+/* Tailwind entry point for the gulp build. See tailwind.config.js — preflight
+   is off, so `base` emits only the --tw-* custom-property defaults that the
+   transform/shadow/ring utilities read, exactly as the play CDN did. The reset
+   and the base element styles come from the Nocturne sheet instead. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
