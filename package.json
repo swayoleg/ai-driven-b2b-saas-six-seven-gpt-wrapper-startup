@@ -10,8 +10,7 @@
         "watch": "gulp watch"
     },
     "dependencies": {
-        "alpinejs": "3.14.1",
-        "jquery": "3.7.1"
+        "alpinejs": "3.14.1"
     },
     "devDependencies": {
         "gulp": "^5.0.0",

@@ -1,33 +1,77 @@
-/* Alpine components + the two jQuery flourishes. No build step: this file is
-   plain ES5-ish script, safe to drop into a Laravel Blade layout as-is. */
+/* Alpine components plus two small flourishes. No build step beyond gulp
+   concatenating and minifying this file; it is plain ES5-ish script.
 
-/* ---------- jQuery: the "live" telemetry that is not live ---------- */
-jQuery(function ($) {
-  function drift($el) {
-    var base = parseInt($el.data('base'), 10);
-    var swing = parseInt($el.data('swing'), 10) || 6;
-    var cur = base;
-    setInterval(function () {
-      cur += Math.floor(Math.random() * swing) - Math.floor(swing / 3);
-      $el.text(cur.toLocaleString('en-US'));
-    }, 1400 + Math.random() * 900);
+   These two effects used to be the only reason the site loaded jQuery — 88 KB
+   to drift some fake numbers and shuffle three word lists. They are ~30 lines
+   of DOM API, so jQuery went. */
+
+/* ---------- the "live" telemetry that is not live ---------- */
+(function () {
+  function onReady(fn) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn);
+    } else {
+      fn();
+    }
   }
-  $('[data-counter]').each(function () { drift($(this)); });
+
+  onReady(function () {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-counter]'), function (el) {
+      var cur = parseInt(el.getAttribute('data-base'), 10);
+      var swing = parseInt(el.getAttribute('data-swing'), 10) || 6;
+
+      if (isNaN(cur)) return;
+
+      setInterval(function () {
+        cur += Math.floor(Math.random() * swing) - Math.floor(swing / 3);
+        el.textContent = cur.toLocaleString('en-US');
+      }, 1400 + Math.random() * 900);
+    });
+  });
 
   /* Buzzword generator — three columns, one straight face. */
   var A = ['agentic','composable','outcome-native','post-dashboard','zero-prompt','sovereign','headless','vertical','self-healing','deterministic'];
   var B = ['orchestration','substrate','telemetry','governance','enablement','abstraction','fabric','reconciliation','observability','alignment'];
   var C = ['layer for the enterprise','mesh','pipeline (managed)','loop','plane','for regulated industries','as a discipline','operating model'];
+
   function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
-  $(document).on('click', '[data-buzz-btn]', function () {
-    var $out = $('[data-buzz-out]');
-    if ($out.data('buzz-a')) { A = $out.data('buzz-a'); B = $out.data('buzz-b'); C = $out.data('buzz-c'); }
-    $out.css('opacity', 0.25);
+
+  /* jQuery's .data() parsed JSON out of the attribute for us; the DOM API
+     hands back a string, so the page's own word lists need parsing. */
+  function listFrom(el, attr, fallback) {
+    var raw = el.getAttribute(attr);
+
+    if (!raw) return fallback;
+
+    try {
+      var parsed = JSON.parse(raw);
+
+      return Array.isArray(parsed) && parsed.length ? parsed : fallback;
+    } catch (error) {
+      return fallback;
+    }
+  }
+
+  document.addEventListener('click', function (event) {
+    var target = event.target;
+
+    if (!target || typeof target.closest !== 'function' || !target.closest('[data-buzz-btn]')) return;
+
+    var out = document.querySelector('[data-buzz-out]');
+
+    if (!out) return;
+
+    var a = listFrom(out, 'data-buzz-a', A);
+    var b = listFrom(out, 'data-buzz-b', B);
+    var c = listFrom(out, 'data-buzz-c', C);
+
+    out.style.opacity = '0.25';
     setTimeout(function () {
-      $out.text(pick(A) + ' ' + pick(B) + ' ' + pick(C)).css('opacity', 1);
+      out.textContent = pick(a) + ' ' + pick(b) + ' ' + pick(c);
+      out.style.opacity = '1';
     }, 180);
   });
-});
+})();
 
 /* ---------- form posting ---------- */
 /* The two forms live inside page content stored in the database, so there is no

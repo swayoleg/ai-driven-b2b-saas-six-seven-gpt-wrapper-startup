@@ -110,16 +110,15 @@ function styles() {
  * One script.
  *
  * The order is load-bearing, not cosmetic:
- *   1. jQuery — app.js opens with a jQuery(function ($) {...}) call;
- *   2. app.js — it registers its Alpine components on the `alpine:init` event,
+ *   1. app.js — it registers its Alpine components on the `alpine:init` event,
  *      which Alpine fires during its own initialisation, so the listener has to
  *      be attached before Alpine's runtime runs;
- *   3. Alpine — boots on load and fires alpine:init.
- * Swap 2 and 3 and every x-data component on the site silently fails to
+ *   2. Alpine — boots on load and fires alpine:init.
+ * Swap them and every x-data component on the site silently fails to
  * register: no error, just dead forms.
  */
 function scripts() {
-    return src(['node_modules/jquery/dist/jquery.js', 'public/assets/app.js', 'node_modules/alpinejs/dist/cdn.js'])
+    return src(['public/assets/app.js', 'node_modules/alpinejs/dist/cdn.js'])
         .pipe(concat('app.min.js'))
         .pipe(terser())
         .pipe(stampNow())
