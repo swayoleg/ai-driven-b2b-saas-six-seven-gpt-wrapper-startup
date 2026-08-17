@@ -4,7 +4,14 @@
 .shell { width: min(100% - 48px, var(--shell)); margin-inline: auto; }
 .rule { height:1px; border:0; background: linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent); }
 .glow { position:absolute; border-radius:9999px; filter: blur(90px); pointer-events:none; }
-.eyebrow { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color: var(--color-accent); }
+/* accent-400 rather than accent: the hero eyebrow sits on top of the blurred
+   accent glow, which lifts the background enough that plain --color-accent
+   drops under 4.5:1. The lighter tint clears it everywhere. */
+.eyebrow { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color: var(--color-accent-400); }
+
+/* Footer column labels. They were <h6>, which jumped the heading order (the
+   pages above them end at h3/h4); they are now <h2> carrying the h6 look. */
+.footer-heading { font-size:13px; letter-spacing:.08em; text-transform:uppercase; }
 .mono { font-variant-numeric: tabular-nums; font-feature-settings:"tnum"; }
 .link-quiet { color: inherit; text-decoration: none; }
 .link-quiet:hover { color: var(--color-accent); }

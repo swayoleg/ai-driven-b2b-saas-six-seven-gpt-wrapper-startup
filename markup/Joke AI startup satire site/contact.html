@@ -70,28 +70,28 @@
             <div style="height:3px;border-radius:99px;background:color-mix(in srgb, var(--color-text) 10%, transparent);margin-top:8px"><div style="height:3px;border-radius:99px;background:var(--color-accent);transition:width .3s" x-bind:style="'width:' + pct + '%'"></div></div>
           </div>
           <div x-show="step === 1" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Work email</h3>
+            <h2 style="font-size:19px">Work email</h2>
             <p class="text-muted" style="font-size:13px;margin:0">Personal addresses are accepted but scored lower against a rubric we maintain internally.</p>
             <div class="field"><label for="email">Email</label><input id="email" class="input" type="email" placeholder="you@company.com" x-model="form.email"></div>
           </div>
           <div x-show="step === 2" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Your organisation</h3>
+            <h2 style="font-size:19px">Your organisation</h2>
             <div class="field"><label for="company">Company</label><input id="company" class="input" x-model="form.company" placeholder="Northbridge"></div>
             <div class="field"><label for="size">Headcount</label><select id="size" class="input" x-model="form.size"><option value="">Select…</option><option>1–67</option><option>68–670</option><option>671–6,700</option><option>More than we can orchestrate</option></select></div>
           </div>
           <div x-show="step === 3" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Where are you on the journey?</h3>
+            <h2 style="font-size:19px">Where are you on the journey?</h2>
             <p class="text-muted" style="font-size:13px;margin:0">There is no wrong answer, but there is a correct one.</p>
             <div class="flex flex-col gap-2"><label class="radio"><input type="radio" name="maturity" value="We have an AI strategy deck" x-model="form.maturity"><span class="dot"></span><span>We have an AI strategy deck</span></label><label class="radio"><input type="radio" name="maturity" value="We have an AI strategy deck and a champion" x-model="form.maturity"><span class="dot"></span><span>We have an AI strategy deck and a champion</span></label><label class="radio"><input type="radio" name="maturity" value="We have already bought something similar" x-model="form.maturity"><span class="dot"></span><span>We have already bought something similar</span></label><label class="radio"><input type="radio" name="maturity" value="We do not know why this meeting was booked" x-model="form.maturity"><span class="dot"></span><span>We do not know why this meeting was booked</span></label></div>
           </div>
           <div x-show="step === 4" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Describe the outcome you want</h3>
+            <h2 style="font-size:19px">Describe the outcome you want</h2>
             <p class="text-muted" style="font-size:13px;margin:0">Free text. Nobody reads this field, including the model.</p>
             <div class="field"><label for="pain">Desired outcome</label><textarea id="pain" class="input" x-model="form.pain" placeholder="Fewer meetings about AI, ideally via more AI."></textarea></div>
             <div class="field"><label for="urgency">Urgency</label><select id="urgency" class="input" x-model="form.urgency"><option>Yesterday</option><option>This quarter</option><option>Before the offsite</option><option>Before a competitor announces it</option></select></div>
           </div>
           <div x-show="step === 5" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Confirm</h3>
+            <h2 style="font-size:19px">Confirm</h2>
             <div class="flex flex-col gap-2" style="font-size:13px">
               <div class="flex justify-between gap-4"><span class="text-muted">Email</span><span class="mono" x-text="form.email"></span></div>
               <div class="flex justify-between gap-4"><span class="text-muted">Company</span><span x-text="form.company"></span></div>

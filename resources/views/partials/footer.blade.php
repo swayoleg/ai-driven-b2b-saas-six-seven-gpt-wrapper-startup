@@ -8,7 +8,7 @@
         <p style="font-size:12px" class="text-muted mono">{{ __('SOC 6.7 aligned · ISO 67001 (self-attested) · GDPR-adjacent') }}</p>
       </div>
       <div>
-        <h6 class="text-muted">{{ __('Platform') }}</h6>
+        <h2 class="text-muted footer-heading">{{ __('Platform') }}</h2>
         <div class="flex flex-col gap-2" style="font-size:13px">
           <a href="{{ loc_url('/') }}" class="link-quiet">{{ __('Overview') }}</a>
           <a href="{{ loc_url('pricing') }}" class="link-quiet">{{ __('Pricing') }}</a>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div>
-        <h6 class="text-muted">{{ __('Company') }}</h6>
+        <h2 class="text-muted footer-heading">{{ __('Company') }}</h2>
         <div class="flex flex-col gap-2" style="font-size:13px">
           <a href="{{ loc_url('about') }}" class="link-quiet">{{ __('About') }}</a>
           <a href="{{ loc_url('blog') }}" class="link-quiet">{{ __('Field Notes') }}</a>
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div>
-        <h6 class="text-muted">{{ __('If you laughed') }}</h6>
+        <h2 class="text-muted footer-heading">{{ __('If you laughed') }}</h2>
         <div class="flex flex-col gap-2" style="font-size:13px">
           <a href="{{ loc_url('support') }}" class="link-quiet">{{ __('Invest in us*') }}</a>
           <span class="text-muted" style="font-size:11px;line-height:1.5">{{ __('*Not investing. Not a security. Not a fund. A coffee, at most.') }}</span>

@@ -70,28 +70,28 @@
             <div style="height:3px;border-radius:99px;background:color-mix(in srgb, var(--color-text) 10%, transparent);margin-top:8px"><div style="height:3px;border-radius:99px;background:var(--color-accent);transition:width .3s" x-bind:style="'width:' + pct + '%'"></div></div>
           </div>
           <div x-show="step === 1" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Робоча пошта</h3>
+            <h2 style="font-size:19px">Робоча пошта</h2>
             <p class="text-muted" style="font-size:13px;margin:0">Особисті адреси приймаються, але отримують нижчий бал за рубрикою, яку ми ведемо всередині.</p>
             <div class="field"><label for="email">Пошта</label><input id="email" class="input" type="email" placeholder="you@company.com" x-model="form.email"></div>
           </div>
           <div x-show="step === 2" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Ваша організація</h3>
+            <h2 style="font-size:19px">Ваша організація</h2>
             <div class="field"><label for="company">Компанія</label><input id="company" class="input" x-model="form.company" placeholder="Northbridge"></div>
             <div class="field"><label for="size">Кількість людей</label><select id="size" class="input" x-model="form.size"><option value="">Оберіть…</option><option>1–67</option><option>68–670</option><option>671–6 700</option><option>Більше, ніж ми здатні оркеструвати</option></select></div>
           </div>
           <div x-show="step === 3" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">На якому ви етапі шляху?</h3>
+            <h2 style="font-size:19px">На якому ви етапі шляху?</h2>
             <p class="text-muted" style="font-size:13px;margin:0">Неправильної відповіді немає, але правильна є.</p>
             <div class="flex flex-col gap-2"><label class="radio"><input type="radio" name="maturity" value="У нас є дек про AI-стратегію" x-model="form.maturity"><span class="dot"></span><span>У нас є дек про AI-стратегію</span></label><label class="radio"><input type="radio" name="maturity" value="У нас є дек і чемпіон" x-model="form.maturity"><span class="dot"></span><span>У нас є дек і чемпіон</span></label><label class="radio"><input type="radio" name="maturity" value="Ми вже купили щось схоже" x-model="form.maturity"><span class="dot"></span><span>Ми вже купили щось схоже</span></label><label class="radio"><input type="radio" name="maturity" value="Ми не знаємо, навіщо призначили цю зустріч" x-model="form.maturity"><span class="dot"></span><span>Ми не знаємо, навіщо призначили цю зустріч</span></label></div>
           </div>
           <div x-show="step === 4" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Опишіть бажаний результат</h3>
+            <h2 style="font-size:19px">Опишіть бажаний результат</h2>
             <p class="text-muted" style="font-size:13px;margin:0">Вільний текст. Це поле не читає ніхто, включно з моделлю.</p>
             <div class="field"><label for="pain">Бажаний результат</label><textarea id="pain" class="input" x-model="form.pain" placeholder="Менше нарад про AI, бажано через більше AI."></textarea></div>
             <div class="field"><label for="urgency">Терміновість</label><select id="urgency" class="input" x-model="form.urgency"><option>Вчора</option><option>Цей квартал</option><option>До виїзної сесії</option><option>До того, як оголосить конкурент</option></select></div>
           </div>
           <div x-show="step === 5" x-cloak class="flex flex-col gap-3">
-            <h3 style="font-size:19px">Підтвердження</h3>
+            <h2 style="font-size:19px">Підтвердження</h2>
             <div class="flex flex-col gap-2" style="font-size:13px">
               <div class="flex justify-between gap-4"><span class="text-muted">Пошта</span><span class="mono" x-text="form.email"></span></div>
               <div class="flex justify-between gap-4"><span class="text-muted">Компанія</span><span x-text="form.company"></span></div>
